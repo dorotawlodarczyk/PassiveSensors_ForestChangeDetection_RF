@@ -1,6 +1,6 @@
 # Overview of the Project
 
-This project involves a comprehensive workflow for acquiring, processing, and analyzing satellite imagery for land cover classification and change detection. The process includes searching for satellite images within specific geographic boundaries, calculating various spectral indices, validating forest cover predictions, and analyzing forest cover changes over time. The project leverages Python and several libraries such as GeoPandas, Rasterio, and Scikit-learn, among others, to handle geospatial data, perform raster operations, and apply machine learning techniques for classification tasks.
+This project involves a comprehensive workflow for acquiring, processing, and analyzing satellite imagery from Landsat-8 and Sentinel-2 for land cover classification and change detection. The process includes searching for satellite images within specific geographic boundaries, calculating various spectral indices, validating forest cover predictions, and analyzing forest cover changes over time. The project leverages Python and several libraries such as GeoPandas, Rasterio, and Scikit-learn, among others, to handle geospatial data, perform raster operations, and apply machine learning techniques for classification tasks.
 
 ### Workflow Components
 
@@ -15,7 +15,7 @@ This project involves a comprehensive workflow for acquiring, processing, and an
 #### Near-Real-Time Forest Change Detection (`NRT_ForestUpdate_spectral`)
 - **Objective**: Provide detailed and timely updates on forest cover changes within specific subareas.
 - **Features**:
-  - Rapid acquisition of Sentinel-2 imagery for designated subareas.
+  - Rapid image acquisition for designated subareas.
   - Automated extraction of spectral index values and application of Random Forest models for land cover classification.
   - Validation of classification accuracy and detailed analysis of forest gain and loss.
 
