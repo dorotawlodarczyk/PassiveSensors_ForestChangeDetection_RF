@@ -2,21 +2,22 @@
 
 This project involves a comprehensive workflow for acquiring, processing, and analyzing satellite imagery for land cover classification and change detection. The process includes searching for satellite images within specific geographic boundaries, calculating various spectral indices, validating forest cover predictions, and analyzing forest cover changes over time. The project leverages Python and several libraries such as GeoPandas, Rasterio, and Scikit-learn, among others, to handle geospatial data, perform raster operations, and apply machine learning techniques for classification tasks.
 
-## Key Components
+### Workflow Components
 
-1. **Sentinel-2 and Landsat-8 Image Acquisition**: Automated search and download of Sentinel-2 and Landsat-8 satellite images based on specified criteria such as geographic area, time frame, and cloud cover.
+#### Land Cover Mapping (`LandCoverMapping_spectral`)
+- **Objective**: Perform large-scale land cover classification using Sentinel-2 and Landsat-8 imagery.
+- **Features**:
+  - Automated satellite image acquisition based on geographic, temporal, and cloud cover criteria.
+  - Calculation of spectral indices to evaluate vegetation health and land cover characteristics.
+  - Land cover classification using Random Forest models.
+  - Model accuracy assessment against ground truth data.
 
-2. **Spectral Indices Calculation**: Processing of satellite imagery to calculate indices like NDVI, GNDVI, EVI, SAVI, and more, which are crucial for environmental and vegetation analysis.
-
-3. **Image Resampling and Mosaicking**: Alignment and stitching of satellite images to create a consistent and comprehensive view of the target area.
-
-4. **Land Cover Classification**: Application of Random Forest classifiers to predict land cover classes based on the calculated spectral indices.
-
-5. **Accuracy Assessment and Validation**: Evaluation of classification accuracy using ground truth data and calculation of metrics such as F1-score, precision, recall, and Cohen's Kappa.
-
-6. **Forest Cover Change Detection**: Analysis of changes in forest cover by comparing satellite imagery over time, identifying areas of forest loss and gain, and calculating the area affected by these changes.
-
-7. **Output Generation**: Creation of change maps, accuracy assessment reports, and statistical summaries to visualize and document the findings.
+#### Near-Real-Time Forest Change Detection (`NRT_ForestUpdate_spectral`)
+- **Objective**: Provide detailed and timely updates on forest cover changes within specific subareas.
+- **Features**:
+  - Rapid acquisition of Sentinel-2 imagery for designated subareas.
+  - Automated extraction of spectral index values and application of Random Forest models for land cover classification.
+  - Validation of classification accuracy and detailed analysis of forest gain and loss.
 
 ## Installation and Usage
 
