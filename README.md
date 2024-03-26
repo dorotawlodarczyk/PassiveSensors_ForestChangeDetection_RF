@@ -35,7 +35,7 @@ This project involves a comprehensive workflow for acquiring, processing, and an
 ## Output
 
 - **Interactive Maps**: Visualizing satellite image search results and geographic footprints.
-- **TIFF Files**: Raster files for calculated spectral indices and classification results.
+- **TIFF Files**: Raster files for calculated spectral indices, classification results and forest change maps.
 - **CSV and Text Files**: Summarizing accuracy assessments, classification metrics, and forest cover change statistics.
 
 This project exemplifies the integration of remote sensing, GIS, and machine learning for environmental monitoring and analysis. It is adaptable for various applications such as agricultural monitoring, urban planning, and ecosystem conservation.
