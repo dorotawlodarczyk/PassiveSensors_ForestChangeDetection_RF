@@ -18,6 +18,7 @@ This project involves a comprehensive workflow for acquiring, processing, and an
   - Rapid image acquisition for designated subareas.
   - Automated extraction of spectral index values and application of Random Forest models for land cover classification.
   - Validation of classification accuracy and detailed analysis of forest gain and loss.
+- **Implementation Note**: For full functionality of the NRT codes, it is essential to implement the following codes from the `LandCoverMapping_spectral` folder as part of the workflow: `Step4_AOIDivisionIntoSubareas.ipynb`, `Step5_GRIDCreation.ipynb`, and `Step7_RandomForestModelBuilding.ipynb` according to the provided workflow schema.
 
 ## Installation and Usage
 
